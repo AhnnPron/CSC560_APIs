@@ -2,10 +2,12 @@ var express = require('express');
 var app = express();
 var fs = require("fs");
 
+var id = 3;
+
 app.delete('/DeleteUser', function (req, res){
   fs.readFile("users.json", 'utf8', function (err, data){
     data = JSON.parse(data);
-    delete data["user" + 3]; //We are assuming we are going to delete the user with id of 2
+    delete data["user" + 3]; //We are assuming we are going to delete the user with id of 3
     console.log(data);
     res.end(JSON.stringify(data));
   });
