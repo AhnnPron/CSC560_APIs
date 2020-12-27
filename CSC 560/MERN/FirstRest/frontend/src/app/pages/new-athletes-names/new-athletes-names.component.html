@@ -1,0 +1,16 @@
+<div class="centered-content">
+  <div class="modal-box">
+    <h1 class="title">
+      Add a new Athlete
+    </h1>
+
+    <input #AthleteTitleInput class="input has-background-light is-medium" type="text" placeholder="Enter athlete name...">
+    <br><br>
+    <div class="buttons is-right">
+      <button class="button is-medium" routerLink="/">Cancel</button>
+      <button class="button is-primary has-text-white is-medium" (click)="createNewAthletesNames(AthletesNamesTitleInput.value)">Add</button>
+    </div>
+
+
+  </div>
+</div>
